@@ -19,7 +19,7 @@ def test_login(username, password):
     print(f"输入的用户名为：{username},输入的密码为：{password}")
 
 
-@pytest.mark.parametrize("test_input, exceptd", [("3+2", 5), ("5+9", 10)
+@pytest.mark.parametrize("test_input, exceptd", [["3+2", 5], ["5+9", 10]
                                                  ],
                          ids=["3+2的值等于5吗", "5+9的值等于10吗"]
                          )
