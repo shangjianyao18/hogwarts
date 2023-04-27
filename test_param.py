@@ -25,3 +25,8 @@ def test_login(username, password):
                          )
 def test_mark_more(test_input, exceptd):
     assert eval(test_input) == exceptd
+
+@pytest.mark.parametrize("a", ["a", "b", "c"])
+@pytest.mark.parametrize("b", ["1", "2", "3"])
+def test_param(a, b):
+    print(f"笛卡尔积形式的参数化中a={a}, b={b}")
